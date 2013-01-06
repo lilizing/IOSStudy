@@ -21,6 +21,8 @@
 		CE9BE1EA16996523008C6457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1CB16996523008C6457 /* Foundation.framework */; };
 		CE9BE1F216996523008C6457 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9BE1F016996523008C6457 /* InfoPlist.strings */; };
 		CE9BE1F516996523008C6457 /* IOSStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE1F416996523008C6457 /* IOSStudyTests.m */; };
+		CE9BE2001699659D008C6457 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE1FF1699659D008C6457 /* BlockTest.m */; };
+		CE9BE203169965C9008C6457 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE202169965C9008C6457 /* A.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		CE9BE1F116996523008C6457 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CE9BE1F316996523008C6457 /* IOSStudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSStudyTests.h; sourceTree = "<group>"; };
 		CE9BE1F416996523008C6457 /* IOSStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSStudyTests.m; sourceTree = "<group>"; };
+		CE9BE1FE1699659D008C6457 /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
+		CE9BE1FF1699659D008C6457 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
+		CE9BE201169965C9008C6457 /* A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		CE9BE202169965C9008C6457 /* A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,10 @@
 		CE9BE1ED16996523008C6457 /* IOSStudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE9BE201169965C9008C6457 /* A.h */,
+				CE9BE202169965C9008C6457 /* A.m */,
+				CE9BE1FE1699659D008C6457 /* BlockTest.h */,
+				CE9BE1FF1699659D008C6457 /* BlockTest.m */,
 				CE9BE1F316996523008C6457 /* IOSStudyTests.h */,
 				CE9BE1F416996523008C6457 /* IOSStudyTests.m */,
 				CE9BE1EE16996523008C6457 /* Supporting Files */,
@@ -271,6 +281,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9BE1F516996523008C6457 /* IOSStudyTests.m in Sources */,
+				CE9BE2001699659D008C6457 /* BlockTest.m in Sources */,
+				CE9BE203169965C9008C6457 /* A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
