@@ -23,6 +23,7 @@
 		CE9BE1F516996523008C6457 /* IOSStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE1F416996523008C6457 /* IOSStudyTests.m */; };
 		CE9BE2001699659D008C6457 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE1FF1699659D008C6457 /* BlockTest.m */; };
 		CE9BE203169965C9008C6457 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE202169965C9008C6457 /* A.m */; };
+		CEE09D99169A9ECF00CE64CD /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE09D98169A9ECF00CE64CD /* GCDTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		CE9BE1FF1699659D008C6457 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 		CE9BE201169965C9008C6457 /* A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
 		CE9BE202169965C9008C6457 /* A.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
+		CEE09D97169A9ECF00CE64CD /* GCDTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDTest.h; sourceTree = "<group>"; };
+		CEE09D98169A9ECF00CE64CD /* GCDTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +145,11 @@
 		CE9BE1ED16996523008C6457 /* IOSStudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEE09D91169A711D00CE64CD /* download */,
 				CE9BE201169965C9008C6457 /* A.h */,
 				CE9BE202169965C9008C6457 /* A.m */,
+				CEE09D97169A9ECF00CE64CD /* GCDTest.h */,
+				CEE09D98169A9ECF00CE64CD /* GCDTest.m */,
 				CE9BE1FE1699659D008C6457 /* BlockTest.h */,
 				CE9BE1FF1699659D008C6457 /* BlockTest.m */,
 				CE9BE1F316996523008C6457 /* IOSStudyTests.h */,
@@ -160,6 +166,13 @@
 				CE9BE1F016996523008C6457 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEE09D91169A711D00CE64CD /* download */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = download;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +296,7 @@
 				CE9BE1F516996523008C6457 /* IOSStudyTests.m in Sources */,
 				CE9BE2001699659D008C6457 /* BlockTest.m in Sources */,
 				CE9BE203169965C9008C6457 /* A.m in Sources */,
+				CEE09D99169A9ECF00CE64CD /* GCDTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +453,7 @@
 				CE9BE1FA16996523008C6457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CE9BE1FB16996523008C6457 /* Build configuration list for PBXNativeTarget "IOSStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +462,7 @@
 				CE9BE1FD16996523008C6457 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
