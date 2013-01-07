@@ -21,13 +21,17 @@
     A *objA = [[A alloc]init];
     __block A *objB = [[A alloc]init];
     
+    A *objT = [[A alloc]init];
+    objT.name = @"hehe";
+    
+    
     objA.name = @"lili";
     
     int a = [objA retainCount];
     
     //NSLog(@"%d",(int)[objA retainCount]);//结果:1
     
-    void (^aBlock)(void)=^{
+    void(^aBlock)(A *)=^(A *objT){
         //intA = 2;//不可被修改，编译不通过
         intB = 2;//__block声明的变量可以被修改
         
@@ -41,12 +45,14 @@
         //NSLog(@"%d",(int)[objA retainCount]);//结果:1，由此可见block中引用外部对象类型的局部变量，并未对该对象做retain
         STAssertEquals(a, (int)[objA retainCount], @"结论：block中访问对象类型的局部变量，并未对该对象做retain");
         
-        STAssertEquals(@"lili", objA.name, @"结论：block中访问对象类型的局部变量，会重新开辟新的变量栈空间（block中的localA变量是新的一块栈空间），与该局部变量指向同一堆对象，因此外部对该变量重新赋值，不影响block对该局部变量的访问结果");
+        STAssertEquals(@"lili", objA.name, @"结论：block中直接访问对象类型的局部变量，会重新开辟新的变量栈空间（block中的localA变量是新的一块栈空间），与该局部变量指向同一堆对象，因此外部对该变量重新赋值，不影响block对该局部变量的访问结果");
         
+        NSLog(@"objT的名字：%@",objT.name);
+        NSLog(@"objT的引用计数：%d",[objT retainCount]);
         
     };
     
-    aBlock();
+    aBlock(objT);
     
     intA = 2;
     
@@ -54,6 +60,8 @@
     objA = [[A alloc]init];
     objA.name = @"tata";
     
-    aBlock();
+    //objT = [[A alloc]init];
+    //objT.name = @"xixi";
+    aBlock(objT);
 }
 @end
