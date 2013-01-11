@@ -23,6 +23,7 @@ typedef UInt32 KLControllerCardState;
 @protocol KLControllerCardDelegate <NSObject>
 @optional
 //Called on any time a state change has occured - even if a state has changed to itself - (i.e. from KLControllerCardStateDefault to KLControllerCardStateDefault)
+//发生状态改变的时候触发，即使是从同一状态再次变为该状态也会触发
 -(void) controllerCard:(KLControllerCard*)controllerCard didChangeToDisplayState:(KLControllerCardState) toState fromDisplayState:(KLControllerCardState) fromState;
 
 //Called when user is panning and a the card has travelled X percent of the distance to the top - Used to redraw other cards during panning fanout
@@ -72,6 +73,8 @@ typedef UInt32 KLControllerCardState;
 //Called on any time a state change has occured - even if a state has changed to itself - (i.e. from KLControllerCardStateDefault to KLControllerCardStateDefault)
 -(void) controllerCard:(KLControllerCard*)controllerCard didChangeToDisplayState:(KLControllerCardState) toState fromDisplayState:(KLControllerCardState) fromState;
 @end
+
+//笔记本总视图控制器数据源委托协议
 @protocol   KLNoteViewControllerDataSource <NSObject>
 @required
 //Called when the NoteViewController needs to know how many controller cards to expect

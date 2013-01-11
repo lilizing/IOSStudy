@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>image</key>
+		<string>premium-header-mid-skinny.png</string>
+		<key>title</key>
+		<string>升至收费账户</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bar-mid.png</string>
+		<key>title</key>
+		<string>地点</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bar-mid.png</string>
+		<key>title</key>
+		<string>标签</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bar-mid.png</string>
+		<key>title</key>
+		<string>笔记本</string>
+	</dict>
+	<dict>
+		<key>image</key>
+		<string>bar-mid.png</string>
+		<key>title</key>
+		<string>所有笔记</string>
+	</dict>
+</array>
+</plist>

@@ -26,6 +26,8 @@
     // Build the array from the plist
     self.viewControllerData = [[NSArray alloc] initWithContentsOfFile:plistPath];
     
+    NSLog(@"数据：%@",self.viewControllerData);
+    
     [super viewDidLoad];
 
 }
@@ -35,9 +37,13 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+//重写父类数据源
 - (NSInteger)numberOfControllerCardsInNoteView:(KLNoteViewController*) noteView {
     return  [self.viewControllerData count];
 }
+
+//
 - (UIViewController *)noteView:(KLNoteViewController*)noteView viewControllerForRowAtIndexPath:(NSIndexPath *)indexPath {
     //Get the relevant data for the navigation controller
     NSDictionary* navDict = [self.viewControllerData objectAtIndex: indexPath.row];
