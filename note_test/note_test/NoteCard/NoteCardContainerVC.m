@@ -23,8 +23,8 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
 	[self reloadData];
+    [super viewDidLoad];
     [self reloadInputViews];
 }
 
@@ -49,20 +49,29 @@
         [noteCard setDelegate:self];
         
         [ncs addObject:noteCard];
+        
+        //添加子控制器缓存起来
+        [self addChildViewController:nagVC];
+        [nagVC didMoveToParentViewController:self];
+        
     }
     self.noteCards = [NSArray arrayWithArray:ncs];
 }
 
--(NSArray *)noteCardBottomCards:(NoteCard *)noteCard
+
+-(void)reloadInputViews
 {
-    NSInteger index = [self.noteCards indexOfObject:noteCard];
-    __weak NoteCardContainerVC *wself = self;
-    return [self.noteCards filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NoteCard *currentCard, NSDictionary *bindings) {
-        __strong NoteCardContainerVC *sself = wself;
-        NSInteger currentIndex = [sself.noteCards indexOfObject:currentCard];
-        return index < currentIndex;
-    }]];
+    [super reloadInputViews];
+    for (NoteCard* card in self.noteCards) {
+        [card.navigationController willMoveToParentViewController:nil];
+        [card removeFromSuperview];
+    }
+    for(NoteCard *card in self.noteCards)
+    {
+        [self.view addSubview:card];
+    }
 }
+
 
 //计算卡片默认纵向位置
 -(CGFloat)defaultVerticalOriginForIndex:(NSInteger)index
@@ -95,18 +104,6 @@
     return [self.dataSource noteCardRootVCForRowAtIndexPath:indexPath];
 }
 
--(void)reloadInputViews
-{
-    [super reloadInputViews];
-    for (NoteCard* card in self.noteCards) {
-        [card.navigationController willMoveToParentViewController:nil];
-        [card removeFromSuperview];
-    }
-    for(NoteCard *card in self.noteCards)
-    {
-        [self.view addSubview:card];
-    }
-}
 
 -(NSArray *)noteCardAboveCards:(NoteCard *)noteCard
 {
@@ -116,6 +113,17 @@
         __strong NoteCardContainerVC *sself = wself;
         NSInteger currentIndex = [sself.noteCards indexOfObject:currentCard];
         return index > currentIndex;
+    }]];
+}
+
+-(NSArray *)noteCardBottomCards:(NoteCard *)noteCard
+{
+    NSInteger index = [self.noteCards indexOfObject:noteCard];
+    __weak NoteCardContainerVC *wself = self;
+    return [self.noteCards filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(NoteCard *currentCard, NSDictionary *bindings) {
+        __strong NoteCardContainerVC *sself = wself;
+        NSInteger currentIndex = [sself.noteCards indexOfObject:currentCard];
+        return index < currentIndex;
     }]];
 }
 

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE07E528169FDBD2005CAEDC /* NoteCard.m in Sources */ = {isa = PBXBuildFile; fileRef = CE07E525169FDBD2005CAEDC /* NoteCard.m */; };
+		CE07E529169FDBD2005CAEDC /* NoteCardContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE07E527169FDBD2005CAEDC /* NoteCardContainerVC.m */; };
 		CE1C539D169D4AAD00127B01 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C539C169D4AAD00127B01 /* UIKit.framework */; };
 		CE1C539F169D4AAD00127B01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C539E169D4AAD00127B01 /* Foundation.framework */; };
 		CE1C53A1169D4AAD00127B01 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE1C53A0169D4AAD00127B01 /* CoreGraphics.framework */; };
@@ -34,8 +36,6 @@
 		CE1C53ED169D4BA900127B01 /* premium-header-mid-skinny.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1C53E3169D4BA900127B01 /* premium-header-mid-skinny.png */; };
 		CE1C53EE169D4BA900127B01 /* premium-header-mid-skinny@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE1C53E4169D4BA900127B01 /* premium-header-mid-skinny@2x.png */; };
 		CE1C53F0169D4BD800127B01 /* NavigationControllerData.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE1C53EF169D4BD800127B01 /* NavigationControllerData.plist */; };
-		CE1C53F8169D4EDA00127B01 /* NoteCard.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C53F7169D4EDA00127B01 /* NoteCard.m */; };
-		CE1C53FB169D4F4900127B01 /* NoteCardContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C53FA169D4F4900127B01 /* NoteCardContainerVC.m */; };
 		CE1C53FF169D4FC200127B01 /* NoteCardRootVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1C53FD169D4FC200127B01 /* NoteCardRootVC.m */; };
 		CE1C5400169D4FC200127B01 /* NoteCardRootVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1C53FE169D4FC200127B01 /* NoteCardRootVC.xib */; };
 /* End PBXBuildFile section */
@@ -51,6 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE07E524169FDBD2005CAEDC /* NoteCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCard.h; sourceTree = "<group>"; };
+		CE07E525169FDBD2005CAEDC /* NoteCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCard.m; sourceTree = "<group>"; };
+		CE07E526169FDBD2005CAEDC /* NoteCardContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCardContainerVC.h; sourceTree = "<group>"; };
+		CE07E527169FDBD2005CAEDC /* NoteCardContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCardContainerVC.m; sourceTree = "<group>"; };
 		CE1C5398169D4AAD00127B01 /* note_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = note_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1C539C169D4AAD00127B01 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE1C539E169D4AAD00127B01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -84,10 +88,6 @@
 		CE1C53E3169D4BA900127B01 /* premium-header-mid-skinny.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "premium-header-mid-skinny.png"; sourceTree = "<group>"; };
 		CE1C53E4169D4BA900127B01 /* premium-header-mid-skinny@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "premium-header-mid-skinny@2x.png"; sourceTree = "<group>"; };
 		CE1C53EF169D4BD800127B01 /* NavigationControllerData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = NavigationControllerData.plist; sourceTree = "<group>"; };
-		CE1C53F6169D4EDA00127B01 /* NoteCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteCard.h; path = ../NoteCard.h; sourceTree = "<group>"; };
-		CE1C53F7169D4EDA00127B01 /* NoteCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteCard.m; path = ../NoteCard.m; sourceTree = "<group>"; };
-		CE1C53F9169D4F4900127B01 /* NoteCardContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCardContainerVC.h; sourceTree = "<group>"; };
-		CE1C53FA169D4F4900127B01 /* NoteCardContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCardContainerVC.m; sourceTree = "<group>"; };
 		CE1C53FC169D4FC200127B01 /* NoteCardRootVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCardRootVC.h; sourceTree = "<group>"; };
 		CE1C53FD169D4FC200127B01 /* NoteCardRootVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCardRootVC.m; sourceTree = "<group>"; };
 		CE1C53FE169D4FC200127B01 /* NoteCardRootVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteCardRootVC.xib; sourceTree = "<group>"; };
@@ -117,6 +117,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE07E523169FDBD2005CAEDC /* NoteCard */ = {
+			isa = PBXGroup;
+			children = (
+				CE07E524169FDBD2005CAEDC /* NoteCard.h */,
+				CE07E525169FDBD2005CAEDC /* NoteCard.m */,
+				CE07E526169FDBD2005CAEDC /* NoteCardContainerVC.h */,
+				CE07E527169FDBD2005CAEDC /* NoteCardContainerVC.m */,
+			);
+			path = NoteCard;
+			sourceTree = "<group>";
+		};
 		CE1C538D169D4AAD00127B01 = {
 			isa = PBXGroup;
 			children = (
@@ -150,9 +161,9 @@
 		CE1C53A2169D4AAD00127B01 /* note_test */ = {
 			isa = PBXGroup;
 			children = (
+				CE07E523169FDBD2005CAEDC /* NoteCard */,
 				CE1C53AB169D4AAD00127B01 /* AppDelegate.h */,
 				CE1C53AC169D4AAD00127B01 /* AppDelegate.m */,
-				CE863281169D5A420041DE2D /* NoteCard */,
 				CE1C53B4169D4AAD00127B01 /* MainVC.h */,
 				CE1C53B5169D4AAD00127B01 /* MainVC.m */,
 				CE1C53B7169D4AAD00127B01 /* MainVC.xib */,
@@ -214,17 +225,6 @@
 				CE1C53E4169D4BA900127B01 /* premium-header-mid-skinny@2x.png */,
 			);
 			path = Images;
-			sourceTree = "<group>";
-		};
-		CE863281169D5A420041DE2D /* NoteCard */ = {
-			isa = PBXGroup;
-			children = (
-				CE1C53F9169D4F4900127B01 /* NoteCardContainerVC.h */,
-				CE1C53FA169D4F4900127B01 /* NoteCardContainerVC.m */,
-				CE1C53F6169D4EDA00127B01 /* NoteCard.h */,
-				CE1C53F7169D4EDA00127B01 /* NoteCard.m */,
-			);
-			name = NoteCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -352,9 +352,9 @@
 				CE1C53A9169D4AAD00127B01 /* main.m in Sources */,
 				CE1C53AD169D4AAD00127B01 /* AppDelegate.m in Sources */,
 				CE1C53B6169D4AAD00127B01 /* MainVC.m in Sources */,
-				CE1C53F8169D4EDA00127B01 /* NoteCard.m in Sources */,
-				CE1C53FB169D4F4900127B01 /* NoteCardContainerVC.m in Sources */,
 				CE1C53FF169D4FC200127B01 /* NoteCardRootVC.m in Sources */,
+				CE07E528169FDBD2005CAEDC /* NoteCard.m in Sources */,
+				CE07E529169FDBD2005CAEDC /* NoteCardContainerVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
