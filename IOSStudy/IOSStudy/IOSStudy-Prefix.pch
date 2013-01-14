@@ -8,6 +8,10 @@
 #warning "This project uses features only available in iOS SDK 3.0 and later."
 #endif
 
+//自定义宏DebugLog
+#define RK_LOG_ENABLED YES
+#define DebugLog( s, ... ) if ( RK_LOG_ENABLED ) NSLog( @"\n\n<%p %@:(%d)> %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>

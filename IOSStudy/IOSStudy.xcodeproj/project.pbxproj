@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE1404F916A3D2B000D0DB50 /* NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1404F816A3D2B000D0DB50 /* NSString+md5.m */; };
+		CE1404FC16A3D31B00D0DB50 /* MD5Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1404FB16A3D31B00D0DB50 /* MD5Test.m */; };
 		CE9BE1CA16996523008C6457 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1C916996523008C6457 /* UIKit.framework */; };
 		CE9BE1CC16996523008C6457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1CB16996523008C6457 /* Foundation.framework */; };
 		CE9BE1CE16996523008C6457 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1CD16996523008C6457 /* CoreGraphics.framework */; };
@@ -20,7 +22,6 @@
 		CE9BE1E916996523008C6457 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1C916996523008C6457 /* UIKit.framework */; };
 		CE9BE1EA16996523008C6457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1CB16996523008C6457 /* Foundation.framework */; };
 		CE9BE1F216996523008C6457 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE9BE1F016996523008C6457 /* InfoPlist.strings */; };
-		CE9BE1F516996523008C6457 /* IOSStudyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE1F416996523008C6457 /* IOSStudyTests.m */; };
 		CE9BE2001699659D008C6457 /* BlockTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE1FF1699659D008C6457 /* BlockTest.m */; };
 		CE9BE203169965C9008C6457 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9BE202169965C9008C6457 /* A.m */; };
 		CEE09D99169A9ECF00CE64CD /* GCDTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE09D98169A9ECF00CE64CD /* GCDTest.m */; };
@@ -37,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE1404F716A3D2B000D0DB50 /* NSString+md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
+		CE1404F816A3D2B000D0DB50 /* NSString+md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
+		CE1404FA16A3D31B00D0DB50 /* MD5Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Test.h; sourceTree = "<group>"; };
+		CE1404FB16A3D31B00D0DB50 /* MD5Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Test.m; sourceTree = "<group>"; };
 		CE9BE1C516996523008C6457 /* IOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9BE1C916996523008C6457 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE9BE1CB16996523008C6457 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -54,8 +59,6 @@
 		CE9BE1E716996523008C6457 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CE9BE1EF16996523008C6457 /* IOSStudyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IOSStudyTests-Info.plist"; sourceTree = "<group>"; };
 		CE9BE1F116996523008C6457 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CE9BE1F316996523008C6457 /* IOSStudyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOSStudyTests.h; sourceTree = "<group>"; };
-		CE9BE1F416996523008C6457 /* IOSStudyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSStudyTests.m; sourceTree = "<group>"; };
 		CE9BE1FE1699659D008C6457 /* BlockTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockTest.h; sourceTree = "<group>"; };
 		CE9BE1FF1699659D008C6457 /* BlockTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockTest.m; sourceTree = "<group>"; };
 		CE9BE201169965C9008C6457 /* A.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
@@ -88,6 +91,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1404F516A3D27600D0DB50 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				CE1404F716A3D2B000D0DB50 /* NSString+md5.h */,
+				CE1404F816A3D2B000D0DB50 /* NSString+md5.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
 		CE9BE1BA16996523008C6457 = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +133,7 @@
 		CE9BE1CF16996523008C6457 /* IOSStudy */ = {
 			isa = PBXGroup;
 			children = (
+				CE1404F516A3D27600D0DB50 /* util */,
 				CE9BE1D816996523008C6457 /* AppDelegate.h */,
 				CE9BE1D916996523008C6457 /* AppDelegate.m */,
 				CE9BE1D016996523008C6457 /* Supporting Files */,
@@ -145,15 +158,14 @@
 		CE9BE1ED16996523008C6457 /* IOSStudyTests */ = {
 			isa = PBXGroup;
 			children = (
-				CEE09D91169A711D00CE64CD /* download */,
+				CE1404FA16A3D31B00D0DB50 /* MD5Test.h */,
+				CE1404FB16A3D31B00D0DB50 /* MD5Test.m */,
 				CE9BE201169965C9008C6457 /* A.h */,
 				CE9BE202169965C9008C6457 /* A.m */,
 				CEE09D97169A9ECF00CE64CD /* GCDTest.h */,
 				CEE09D98169A9ECF00CE64CD /* GCDTest.m */,
 				CE9BE1FE1699659D008C6457 /* BlockTest.h */,
 				CE9BE1FF1699659D008C6457 /* BlockTest.m */,
-				CE9BE1F316996523008C6457 /* IOSStudyTests.h */,
-				CE9BE1F416996523008C6457 /* IOSStudyTests.m */,
 				CE9BE1EE16996523008C6457 /* Supporting Files */,
 			);
 			path = IOSStudyTests;
@@ -166,13 +178,6 @@
 				CE9BE1F016996523008C6457 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CEE09D91169A711D00CE64CD /* download */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = download;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +291,7 @@
 			files = (
 				CE9BE1D616996523008C6457 /* main.m in Sources */,
 				CE9BE1DA16996523008C6457 /* AppDelegate.m in Sources */,
+				CE1404F916A3D2B000D0DB50 /* NSString+md5.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,10 +299,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE9BE1F516996523008C6457 /* IOSStudyTests.m in Sources */,
 				CE9BE2001699659D008C6457 /* BlockTest.m in Sources */,
 				CE9BE203169965C9008C6457 /* A.m in Sources */,
 				CEE09D99169A9ECF00CE64CD /* GCDTest.m in Sources */,
+				CE1404FC16A3D31B00D0DB50 /* MD5Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

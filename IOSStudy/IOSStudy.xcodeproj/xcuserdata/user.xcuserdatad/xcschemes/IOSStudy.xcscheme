@@ -44,6 +44,9 @@
                <Test
                   Identifier = "IOSStudyTests">
                </Test>
+               <Test
+                  Identifier = "GCDTest">
+               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>
