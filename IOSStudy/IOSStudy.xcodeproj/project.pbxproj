@@ -7,8 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE01D86B16A4E1D0007E85AD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D86916A4E1D0007E85AD /* ViewController.m */; };
+		CE01D86C16A4E1D0007E85AD /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE01D86A16A4E1D0007E85AD /* ViewController.xib */; };
+		CE01D8C316A524F9007E85AD /* CstructTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE01D86516A4DB8B007E85AD /* CstructTest.m */; };
+		CE0235CB16A3F396004B1CCF /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0235CA16A3F396004B1CCF /* NSObject+Property.m */; };
+		CE0235CF16A3F6E3004B1CCF /* PropertyDictionaryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0235CE16A3F6E3004B1CCF /* PropertyDictionaryTest.m */; };
 		CE1404F916A3D2B000D0DB50 /* NSString+md5.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1404F816A3D2B000D0DB50 /* NSString+md5.m */; };
 		CE1404FC16A3D31B00D0DB50 /* MD5Test.m in Sources */ = {isa = PBXBuildFile; fileRef = CE1404FB16A3D31B00D0DB50 /* MD5Test.m */; };
+		CE4A991D16A69C5D0063DE55 /* floorfTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4A991C16A69C5D0063DE55 /* floorfTest.m */; };
+		CE4C560316A792DE00940D4C /* FontTest.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4C560216A792DE00940D4C /* FontTest.m */; };
 		CE9BE1CA16996523008C6457 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1C916996523008C6457 /* UIKit.framework */; };
 		CE9BE1CC16996523008C6457 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1CB16996523008C6457 /* Foundation.framework */; };
 		CE9BE1CE16996523008C6457 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE9BE1CD16996523008C6457 /* CoreGraphics.framework */; };
@@ -38,10 +45,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CE01D86416A4DB8B007E85AD /* CstructTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CstructTest.h; sourceTree = "<group>"; };
+		CE01D86516A4DB8B007E85AD /* CstructTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CstructTest.m; sourceTree = "<group>"; };
+		CE01D86816A4E1D0007E85AD /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CE01D86916A4E1D0007E85AD /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CE01D86A16A4E1D0007E85AD /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CE0235C916A3F396004B1CCF /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		CE0235CA16A3F396004B1CCF /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		CE0235CD16A3F6E3004B1CCF /* PropertyDictionaryTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyDictionaryTest.h; sourceTree = "<group>"; };
+		CE0235CE16A3F6E3004B1CCF /* PropertyDictionaryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyDictionaryTest.m; sourceTree = "<group>"; };
 		CE1404F716A3D2B000D0DB50 /* NSString+md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+md5.h"; sourceTree = "<group>"; };
 		CE1404F816A3D2B000D0DB50 /* NSString+md5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+md5.m"; sourceTree = "<group>"; };
 		CE1404FA16A3D31B00D0DB50 /* MD5Test.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Test.h; sourceTree = "<group>"; };
 		CE1404FB16A3D31B00D0DB50 /* MD5Test.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MD5Test.m; sourceTree = "<group>"; };
+		CE4A991B16A69C5D0063DE55 /* floorfTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = floorfTest.h; sourceTree = "<group>"; };
+		CE4A991C16A69C5D0063DE55 /* floorfTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = floorfTest.m; sourceTree = "<group>"; };
+		CE4C560116A792DE00940D4C /* FontTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FontTest.h; sourceTree = "<group>"; };
+		CE4C560216A792DE00940D4C /* FontTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FontTest.m; sourceTree = "<group>"; };
 		CE9BE1C516996523008C6457 /* IOSStudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSStudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9BE1C916996523008C6457 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CE9BE1CB16996523008C6457 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -96,6 +116,8 @@
 			children = (
 				CE1404F716A3D2B000D0DB50 /* NSString+md5.h */,
 				CE1404F816A3D2B000D0DB50 /* NSString+md5.m */,
+				CE0235C916A3F396004B1CCF /* NSObject+Property.h */,
+				CE0235CA16A3F396004B1CCF /* NSObject+Property.m */,
 			);
 			name = util;
 			sourceTree = "<group>";
@@ -136,6 +158,9 @@
 				CE1404F516A3D27600D0DB50 /* util */,
 				CE9BE1D816996523008C6457 /* AppDelegate.h */,
 				CE9BE1D916996523008C6457 /* AppDelegate.m */,
+				CE01D86816A4E1D0007E85AD /* ViewController.h */,
+				CE01D86916A4E1D0007E85AD /* ViewController.m */,
+				CE01D86A16A4E1D0007E85AD /* ViewController.xib */,
 				CE9BE1D016996523008C6457 /* Supporting Files */,
 			);
 			path = IOSStudy;
@@ -158,6 +183,12 @@
 		CE9BE1ED16996523008C6457 /* IOSStudyTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE4C560116A792DE00940D4C /* FontTest.h */,
+				CE4C560216A792DE00940D4C /* FontTest.m */,
+				CE01D86416A4DB8B007E85AD /* CstructTest.h */,
+				CE01D86516A4DB8B007E85AD /* CstructTest.m */,
+				CE0235CD16A3F6E3004B1CCF /* PropertyDictionaryTest.h */,
+				CE0235CE16A3F6E3004B1CCF /* PropertyDictionaryTest.m */,
 				CE1404FA16A3D31B00D0DB50 /* MD5Test.h */,
 				CE1404FB16A3D31B00D0DB50 /* MD5Test.m */,
 				CE9BE201169965C9008C6457 /* A.h */,
@@ -167,6 +198,8 @@
 				CE9BE1FE1699659D008C6457 /* BlockTest.h */,
 				CE9BE1FF1699659D008C6457 /* BlockTest.m */,
 				CE9BE1EE16996523008C6457 /* Supporting Files */,
+				CE4A991B16A69C5D0063DE55 /* floorfTest.h */,
+				CE4A991C16A69C5D0063DE55 /* floorfTest.m */,
 			);
 			path = IOSStudyTests;
 			sourceTree = "<group>";
@@ -255,6 +288,7 @@
 				CE9BE1DC16996523008C6457 /* Default.png in Resources */,
 				CE9BE1DE16996523008C6457 /* Default@2x.png in Resources */,
 				CE9BE1E016996523008C6457 /* Default-568h@2x.png in Resources */,
+				CE01D86C16A4E1D0007E85AD /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +326,8 @@
 				CE9BE1D616996523008C6457 /* main.m in Sources */,
 				CE9BE1DA16996523008C6457 /* AppDelegate.m in Sources */,
 				CE1404F916A3D2B000D0DB50 /* NSString+md5.m in Sources */,
+				CE0235CB16A3F396004B1CCF /* NSObject+Property.m in Sources */,
+				CE01D86B16A4E1D0007E85AD /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +339,10 @@
 				CE9BE203169965C9008C6457 /* A.m in Sources */,
 				CEE09D99169A9ECF00CE64CD /* GCDTest.m in Sources */,
 				CE1404FC16A3D31B00D0DB50 /* MD5Test.m in Sources */,
+				CE0235CF16A3F6E3004B1CCF /* PropertyDictionaryTest.m in Sources */,
+				CE01D8C316A524F9007E85AD /* CstructTest.m in Sources */,
+				CE4A991D16A69C5D0063DE55 /* floorfTest.m in Sources */,
+				CE4C560316A792DE00940D4C /* FontTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

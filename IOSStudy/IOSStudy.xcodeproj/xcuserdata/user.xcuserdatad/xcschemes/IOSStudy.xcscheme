@@ -47,6 +47,21 @@
                <Test
                   Identifier = "GCDTest">
                </Test>
+               <Test
+                  Identifier = "PropertyDictionaryTest">
+               </Test>
+               <Test
+                  Identifier = "MD5Test">
+               </Test>
+               <Test
+                  Identifier = "floorfTest">
+               </Test>
+               <Test
+                  Identifier = "CstructTest">
+               </Test>
+               <Test
+                  Identifier = "FontTest">
+               </Test>
             </SkippedTests>
          </TestableReference>
       </Testables>
